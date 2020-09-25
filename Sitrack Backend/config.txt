@@ -3,3 +3,26 @@
 -La aplicación Web es un proyecto NetBeans, para poder ejecutarlo, es necesario tener el Apache Tomcat instalado y MySQL.
 -Se debe crear una BD y cargar el backup "matrix.sql.zip".
 -Las opciones de conexión se especifican en en siguiente directorio: "rest\web\META-INF\context.xml".
+
+-Propuesta:
+Agregar un sistema de puntuación:
+-Principios del sistema de puntuación:
+1-La puntuación máxima a alcanzar dependerá del tamaño de la Matriz, de la orientación de cada palabra, de la cantidad de palabras
+dentro de la Matriz y la longitud de cada palabra.
+
+S(Cantidad de letras)=Ancho*Alto
+C(Cantidad de palabras)
+IC(Índice de complejidad)
+L(Longitud de la palabra)
+PP(puntuación por palabra)=(S * C) * IC + L
+PT(Puntuación total de la Matriz)=Sumatoria de las puntuaciones de cada palabra contenida.
+
+IC:
+Horizontal L-R: 1
+Horizontal R-L: 1.4
+Vertical T-B: 1
+Vertical B-T: 1.4
+Diagonal B-T L-R: 1.2
+Diagonal B-T R-L: 1.6
+Diagonal T-B L-R: 1.2
+Diagonal T-B R-L: 1.6
