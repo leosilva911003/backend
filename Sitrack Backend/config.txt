@@ -1,0 +1,5 @@
+-La aplicación en consola, se abre en NetBeans y se corre.
+
+-La aplicación Web es un proyecto NetBeans, para poder ejecutarlo, es necesario tener el Apache Tomcat instalado y MySQL.
+-Se debe crear una BD y cargar el backup "matrix.sql.zip".
+-Las opciones de conexión se especifican en en siguiente directorio: "rest\web\META-INF\context.xml".
